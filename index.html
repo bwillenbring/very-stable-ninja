@@ -3,23 +3,43 @@
 <head>
     <meta charset="UTF-8" />
     <title>A Very Stable Ninja</title>
-    <script src="js/phaser.min.js"></script> 
-    <style type="text/css">
-        body {
-            margin: 0;
-        }
-        #debugger {
-            padding:10px;
-            position:absolute;
-            margin-left:1200px;
-            width: calc(100% - 1245px);
-            background-color:#FFFFFF;
-            border:5px solid #757575;
-        }
-    </style>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/phaser.min.js"></script>
+    <link rel="stylesheet" href="css/ninja.css" type="text/css" media="all" />
 </head>
 <body>
-<div id="debugger">Debugger</div>
-<script src="js/ninja.js"></script>
+
+<div id="content">
+    <div id="game">
+        <script src="js/ninja.js"></script>
+    </div>
+
+    <div id="controls">
+        <div id="credits">
+            <h1>"Very Stable Ninja"</h1>
+            <p>
+                Version: 1.2<br/>
+                Worked on while under self-imposed quarantine in New York City during COVID-19 with Eli Sullo.
+            </p>
+        </div>
+
+        <div id="scoreboard">
+            <h1 value="0" id="score">0</h1>
+            <b>How to score...</b>
+            <ul>
+                <li>Avoid bombs and germs </li>
+                <li>Neutralize racists and science deniers</li>
+                <li>Collect N-95 Masks + "Evidence"</li>
+
+            </ul>
+        </div>
+
+        <div id="debuggerOutput">
+            <button id="btnPlay" onclick="javascript:toggleBombing();" value="drop">Begin</button>
+            <span id="debugger"></span>
+        </div>
+
+    </div>
+</div>
 </body>
 </html>
