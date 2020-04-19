@@ -27,8 +27,9 @@ body {
 #game {
     border:0px;
     padding:0px;
-    /* margin:auto; */
-    text-align: center;
+    margin:0 auto;
+    display:block;
+    /* text-align: center; */
 }
 
 #controls {

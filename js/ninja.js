@@ -1,9 +1,13 @@
 var GLOBAL_PADDING=200;
 function getDimensions() {
+    // For computers
+    let h = $(window).height() - 10;
+    h = screen.height - 10;
+    let w = Math.floor(screen.width * .98);
     let obj = {
         userAgent: navigator.userAgent,
-        width: screen.width - 200,
-        height: $(window).height() - 10,
+        width: w,
+        height: h,
         availWidth: screen.availWidth,
         availheight: screen.availHeight,
         screen_orientation_angle: screen.orientation.angle ? screen.orientation.angle : null,
@@ -453,7 +457,7 @@ $(document).ready(function() {
     config = {
         type: Phaser.AUTO,
         parent: 'game',
-        autoCenter: true,
+        autoCenter: false,
         width: dims.width,
         height: dims.height,
         physics: {
