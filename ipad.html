@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <!-- For tablets and mobile - set orientation to landscape -->
+    <!-- <meta name="viewport" content="width=device-width/" > -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>A Very Stable Ninja</title>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <script src="js/phaser.min.js"></script>
+    <link rel="stylesheet" href="css/ipad.css" type="text/css" media="all" />
+</head>
+<body>
+
+<div id="content">
+    <div id="game">
+        <script src="js/ninja.js"></script>
+    </div>
+
+    <div id="controls">
+        <div id="credits">
+            <h1>"Very Stable Ninja"</h1>
+            <p>
+                Version: 1.2<br/>
+                Worked on while under self-imposed quarantine in New York City during COVID-19 with Eli Sullo.
+            </p>
+        </div>
+
+        <div id="scoreboard">
+            <h1 value="0" id="score">0</h1>
+            <b>How to score...</b>
+            <ul>
+                <li>Avoid bombs and germs </li>
+                <li>Neutralize racists and science deniers</li>
+                <li>Collect N-95 Masks + "Evidence"</li>
+            </ul>
+        </div>
+
+        <div id="debuggerOutput">
+            <button id="btnPlay" onclick="javascript:toggleBombing();" value="drop">Begin</button>
+            <br/>
+            <span id="debugger"></span>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

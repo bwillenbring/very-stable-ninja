@@ -1,0 +1,25 @@
+body {
+    margin:0px;
+    padding:0px;
+}
+
+#content {
+    width:100%;
+    height:100%;
+    margin:auto;
+    text-align: center;
+}
+    /* The game goes in here */
+    #game {
+        width:100%;
+        max-height:
+    }
+
+    /* Controls */
+    #controls {
+
+    }
+
+        #credits {}
+        #scoreboard {}
+        #debuggerOutput {}
