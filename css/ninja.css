@@ -1,3 +1,18 @@
+@media only screen and (orientation:portrait){
+  body {
+    /* height: 100vw;
+    width: 100vh; */
+    /* transform: rotate(90deg); */
+  }
+}
+/* @media only screen and (orientation:landscape){
+  body {
+    border:5px solid red;
+    height: 100vh;
+    width: 100vw;
+    transform: rotate(90deg);
+  }
+} */
 body {
     margin: 0;
     background-color:#222222;
@@ -10,7 +25,8 @@ body {
     display:table;
 }
 #game {
-    border:0px solid #757575;
+    border:0px;
+    padding:0px;
     /* margin:auto; */
     text-align: center;
 }
@@ -32,7 +48,7 @@ body {
 }
 
 #controls div {
-    min-width:175px;
+    min-width:105px;
     max-width:25%;
     display:inline-table;
     min-height:150px;
@@ -49,6 +65,7 @@ body {
     line-height:110%;
     font-family: Courier;
     display:none;
+    word-wrap:break-word;
 }
 
 #controls button {
@@ -57,6 +74,7 @@ body {
     font-weight:600;
     padding:7px;
     width:185px;
+    width:10em;
     border-radius:5px;
     color:#FFFFFF;
 }
