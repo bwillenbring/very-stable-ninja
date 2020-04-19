@@ -343,6 +343,7 @@ function generate_star(src='anonymous'){
         temp_star.setDamping(true);
         temp_star.setDragX(.98);
         temp_star.setBounce(.3);
+        temp_star.setAngularVelocity(Phaser.Math.Between(-125, 125));
         temp_star.setCollideWorldBounds(true);
         // console.log('GENERATING A STAR!!!');
     }
