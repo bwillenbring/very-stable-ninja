@@ -162,7 +162,7 @@ function create () {
     stars.inputEnableChildren = true;
     // stars.onEnterBounds.add(onEnterBounds, this);
     this.physics.add.collider(stars, platforms);
-    this.physics.add.collider(player, stars);
+    // this.physics.add.collider(player, stars);
     generate_star();
 
     this.anims.create({
